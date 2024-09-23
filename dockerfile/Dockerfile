@@ -1,8 +1,20 @@
+# Use a imagem base do NGINX
 FROM nginx:alpine
-LABEL maintainer="Patrícia Sousa"
 
-# Copiar a página HTML para o diretório padrão do NGINX
-COPY ./app /usr/share/nginx/html
+# Crie um grupo e um usuário não-root
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
-# Rodar o NGINX com um usuário não-root
-USER nginx
+# Copie os arquivos da aplicação
+COPY . /usr/share/nginx/html
+
+# Mude a propriedade dos arquivos para o usuário não-root
+RUN chown -R appuser:appgroup /usr/share/nginx/html
+
+# Troque para o usuário não-root
+USER appuser
+
+# Exponha a porta da aplicação
+EXPOSE 80
+
+# Comando para rodar o servidor NGINX
+CMD ["nginx", "-g", "daemon off;"]
