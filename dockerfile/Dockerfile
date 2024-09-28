@@ -1,20 +1,17 @@
-# Use a imagem base do NGINX
-FROM nginx:alpine
+# Usando a imagem base do WordPress
+FROM wordpress:latest
 
-# Crie um grupo e um usuário não-root
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+# Adicionando um grupo e um usuário não-root
+RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
 
-# Copie os arquivos da aplicação
-COPY . /usr/share/nginx/html
+# Definindo o diretório de trabalho
+WORKDIR /var/www/html
 
-# Mude a propriedade dos arquivos para o usuário não-root
-RUN chown -R appuser:appgroup /usr/share/nginx/html
+# Copiando o arquivo index.html para o diretório de trabalho
+COPY ./dockerfile/app/index.html .
 
-# Troque para o usuário não-root
-USER appuser
+# Alterando a propriedade dos arquivos para o usuário não-root
+RUN chown -R appuser:appgroup /var/www/html
 
-# Exponha a porta da aplicação
-EXPOSE 80
-
-# Comando para rodar o servidor NGINX
-CMD ["nginx", "-g", "daemon off;"]
+# Comando para iniciar o WordPress
+CMD ["apache2-foreground"]
