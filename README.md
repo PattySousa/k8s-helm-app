@@ -75,3 +75,7 @@ o Dockerfile baixado na máquina e tive que mexer várias vezes no caminho para 
 
 => (Instalei o Minikube, Vagrant e o Oracle VM VirtualBox mas não tive sucesso para subir VMs locais em minha máquina.
 O Minikube deu muitos erros, fiquei 2 dias tentando resolver, o Vagrant com o Oracle VM VirtualBox consegui subir e configurar 3 VMs na minha máquina, mas da quarta em diante a máquina quase parou, mesmo reduzindo as configurações de memória destas. Então finalizei o desafio da forma que foi possível, hoje 27/09/24 às 22h15, tentei até o final, mas não logrei 100% de êxito no desafio, porém aprendi demais e tenho muita gratidão pela oportunidade deste treinamento :)
+
+Abraços,
+
+Patrícia Sousa 
