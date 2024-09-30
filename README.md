@@ -17,9 +17,11 @@
 => mkdir app && cd app
    touch index.html
 
+
+
 2b- Adicionei um script básico de html, no arquivo index.html, detalhado abaixo:   
 
-/* <!DOCTYPE html>
+  <!DOCTYPE html>
    <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +34,13 @@
     <p>Independente do resultado, gostaria muito de agradecer à excelente oportunidade de aprendizado adquirido.</p>
     <p>Gratidão!</p>
 </body>
-</html> */
+</html> 
+
+
+
+
+
+
 
 2C- Instalei Helm e suas ferramentas, Kubernetes e Docker.
 
