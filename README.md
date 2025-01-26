@@ -1,5 +1,4 @@
-# DesafioJackExperts
-=> Documentação do Desafio Jack Experts
+k8s-helm-app
 
 1- Preparando o Repositório Git
 
@@ -29,10 +28,7 @@
     <title>Minha Aplicação</title>
 </head>
 <body>
-    <h1>Bem-vindo à minha documentação!</h1>
-    <p>A empresa proporcionou um excelente treinamento ao longo da semana.</p>
-    <p>Independente do resultado, gostaria muito de agradecer à excelente oportunidade de aprendizado adquirido.</p>
-    <p>Gratidão!</p>
+    <h1>K8-Helm-App / Patricia Sousa</h1>
 </body>
 </html> 
 
@@ -71,11 +67,6 @@ o Dockerfile baixado na máquina e tive que mexer várias vezes no caminho para 
   
   Enviei para o DockerHub
 
-  3b-Contrua e teste sua imagem localmente: 
 
-=> (Instalei o Minikube, Vagrant e o Oracle VM VirtualBox mas não tive sucesso para subir VMs locais em minha máquina.
-O Minikube deu muitos erros, fiquei 2 dias tentando resolver, o Vagrant com o Oracle VM VirtualBox consegui subir e configurar 3 VMs na minha máquina, mas da quarta em diante a máquina quase parou, mesmo reduzindo as configurações de memória destas. Então finalizei o desafio da forma que foi possível, hoje 27/09/24 às 22h15, tentei até o final, mas não logrei 100% de êxito no desafio, porém aprendi demais e tenho muita gratidão pela oportunidade deste treinamento :)
 
-Abraços,
 
-Patrícia Sousa 
